@@ -1,0 +1,25 @@
+mergenciaJavaPriorityQueue.java y EmergenciaVectorHeap.java
+
+
+Ambas clases son programas principales que:
+
+Leen un archivo de texto (pacientes.txt) que contiene información de pacientes (nombre, síntoma, código de emergencia).
+Crean objetos Paciente a partir de los datos leídos.
+Usan una cola con prioridad para ordenar a los pacientes según su código de emergencia (A-E, donde A es la mayor prioridad).
+Extraen y muestran los pacientes en orden de prioridad, simulando la atención en una sala de emergencias.
+
+
+
+EmergenciaVectorHeap.java
+depende de VectorHeap
+VectorHeap es una clase que tú (o el estudiante) implementaste como parte de la tarea.
+Está basada en un heap (estructura de datos en forma de árbol binario)
+El ordenamiento de los pacientes se realiza mediante un heap mínimo,
+donde el elemento con mayor prioridad (menor código de emergencia, como "A") está en la raíz.
+
+
+
+EmergenciaJavaPriorityQueue.java
+depende de paciente
+es una clase estándar de Java que también implementa una cola con prioridad basada en un heap
+También es un heap mínimo por defecto, lo que significa que el elemento con mayor prioridad (menor código de emergencia, como "A") se extrae primero.
